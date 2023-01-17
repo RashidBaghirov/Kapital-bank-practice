@@ -1,0 +1,40 @@
+#text {
+    padding: 25px;
+
+    .container {
+        .row {
+            .title {
+                text-align: center;
+            }
+        }
+    }
+}
+
+#end {
+
+    background-color: #FBFAF9;
+
+    .container {
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        .row {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                font-size: 14px;
+                line-height: 18px;
+                text-decoration: none;
+                color: black;
+            }
+
+            .campaign-link {
+                color: red;
+            }
+
+        }
+    }
+}

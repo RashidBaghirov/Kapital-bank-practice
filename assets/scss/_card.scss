@@ -1,0 +1,47 @@
+#cards {
+    background-color: #FFFFFF;
+
+    .container {
+        .title {
+            h2 {
+                font-size: 44px;
+            }
+
+            p {
+                font-size: 14px;
+                color: rgb(63, 62, 62);
+            }
+        }
+
+        .row {
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+            .popular {
+                background-color: #FBFAF9;
+                width: 950px;
+                border: 1px solid rgb(156, 154, 154);
+                padding: 30px;
+                border-radius: 20px;
+
+                .text {
+                    small {
+                        &::before {
+                            content: "\1F525";
+                            color: red;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+
+                .image {
+                    width: 277px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
