@@ -1,0 +1,266 @@
+.banner {
+  width: 100%;
+  height: 425px;
+  background: #e8ecf1;
+  position: relative;
+  @media (min-width: 320px) and (max-width: 480px) {
+    width: 100%;
+    height: 500px;
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    width: 100%;
+    height: 500px;
+  }
+
+  .banner-main {
+    width: 100%;
+    height: 320px;
+    @media (min-width: 320px) and (max-width: 480px) {
+      width: 100%;
+      height: 100%;
+    }
+    @media (min-width: 481px) and (max-width: 768px) {
+      width: 100%;
+      height: 500px;
+    }
+    &:hover img {
+      transform: scale(1.1);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      @media (min-width: 320px) and (max-width: 480px) {
+        width: 100%;
+      }
+      @media (min-width: 481px) and (max-width: 768px) {
+        width: 100%;
+      }
+      .banner-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        @media (min-width: 320px) and (max-width: 480px) {
+          flex-direction: column-reverse;
+        }
+        @media (min-width: 481px) and (max-width: 768px) {
+          flex-direction: column-reverse;
+        }
+        .left-content {
+          margin: 30px 0;
+          width: 578px;
+          height: 318px;
+          padding: 30px 0;
+          @media (min-width: 320px) and (max-width: 480px) {
+            all: initial;
+          }
+          @media (min-width: 481px) and (max-width: 768px) {
+            width: 100%;
+            height: 50%;
+            margin: initial;
+            padding: 8px 0 0 0;
+          }
+          .left-items {
+            @media (min-width: 320px) and (max-width: 480px) {
+              padding: 30px;
+            }
+            @media (min-width: 481px) and (max-width: 768px) {
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+            }
+            .banner-text {
+              width: 578px;
+              height: 92px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              @media (min-width: 320px) and (max-width: 480px) {
+                width: 100%;
+                text-align: center;
+              }
+              @media (min-width: 481px) and (max-width: 768px) {
+                align-items: center;
+                text-align: center;
+              }
+
+              p {
+                .font-sm {
+                  font-size: 28px;
+                  font-weight: 400px;
+                  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                    "Helvetica Neue", sans-serif;
+                }
+                .font-xs {
+                  font-size: 16px;
+                  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                    "Helvetica Neue", sans-serif;
+                }
+                .font-bold {
+                  font-size: 30px;
+                  font-weight: bold;
+                  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                    "Helvetica Neue", sans-serif;
+                  @media (min-width: 320px) and (max-width: 480px) {
+                    font-size: 24px;
+                  }
+                }
+              }
+            }
+            .banner-button {
+              display: flex;
+              justify-content: flex-start;
+              padding: 30px 0;
+              @media (min-width: 481px) and (max-width: 768px) {
+                padding: initial;
+                justify-content: center;
+              }
+              .btn {
+                width: 280px;
+                background-color: #f45369;
+                border-radius: 8px;
+                display: inline-block;
+                padding: 11px 20px 14px;
+                font-size: 20px;
+                color: #fff !important;
+                line-height: 30px;
+                text-align: center;
+                border: none;
+                cursor: pointer;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                  "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                  "Helvetica Neue", sans-serif;
+                @media (min-width: 320px) and (max-width: 480px) {
+                  width: 100%;
+                }
+              }
+            }
+          }
+          .navigate-btns {
+            position: absolute;
+            bottom: -55px;
+            left: 160px;
+            width: 100px;
+            display: flex;
+            justify-content: space-around;
+            @media (min-width: 320px) and (max-width: 480px) {
+              justify-content: space-between;
+              width: 100%;
+              position: relative;
+              left: 0;
+            }
+            @media (min-width: 481px) and (max-width: 768px) {
+              width: 100%;
+              justify-content: space-between;
+              position: relative;
+              top: -173px;
+            }
+
+            .next-button,
+            .prev-button {
+              background-color: #fff;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              padding-left: 8px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              @media (min-width: 320px) and (max-width: 480px) {
+                position: absolute;
+                top: 245px;
+              }
+            }
+          }
+        }
+        .right-content {
+          width: 608px;
+          height: 320px;
+          padding: 30px 10px 0;
+          @media (min-width: 320px) and (max-width: 480px) {
+            width: 100%;
+            height: 50%;
+            background-color: #fff;
+          }
+          @media (min-width: 481px) and (max-width: 768px) {
+            width: 100%;
+            height: 50%;
+            background-color: #fff;
+            padding: initial;
+          }
+          .banner-img {
+            width: 578px;
+            height: 289px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media (min-width: 320px) and (max-width: 480px) {
+              width: 100%;
+              height: 100%;
+            }
+            @media (min-width: 481px) and (max-width: 768px) {
+              width: 100%;
+              height: 100%;
+            }
+            picture {
+              margin-left: auto;
+              margin-right: auto;
+              max-width: 100%;
+              @media (min-width: 320px) and (max-width: 480px) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+              @media (min-width: 481px) and (max-width: 768px) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .ipotek-img {
+                  width: 40%;
+                }
+              }
+              img {
+                width: 100%;
+                height: 289px;
+                transition: ease-in-out 0.5s;
+                @media (min-width: 320px) and (max-width: 480px) {
+                  all: initial;
+                  width: 63%;
+                  object-position: bottom;
+                }
+                @media (min-width: 481px) and (max-width: 768px) {
+                  height: 100%;
+                  width: 63%;
+                  object-position: bottom;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .ipotek-img {
+    all: initial;
+    width: 40% !important;
+    object-position: bottom;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .prev-button {
+    position: absolute;
+    top: 140px;
+    right: 1260px;
+  }
+  .next-button {
+    position: absolute;
+    top: 140px;
+    left: -1260px;
+  }
+}
